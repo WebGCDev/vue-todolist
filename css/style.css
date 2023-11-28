@@ -1,3 +1,19 @@
-h1 {
+h1,
+h3 {
   text-align: center;
+}
+
+li > span,
+i {
+  cursor: pointer;
+}
+
+span.done {
+  text-decoration: line-through;
+}
+
+.fa-check {
+  top: -4px;
+  left: 0;
+  font-size: 1.2rem;
 }

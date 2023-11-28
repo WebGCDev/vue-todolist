@@ -13,7 +13,7 @@ createApp({
           done: false,
         },
         {
-          text: 'Seguire Masterclass dedicata al mondo del 3D applicato al Web Development',
+          text: 'Seguire Masterclass dedicata al mondo del 3D applicato al Web Development ore 18.00',
           done: false,
         },
         {
@@ -30,5 +30,13 @@ createApp({
         },
       ],
     };
+  },
+  methods: {
+    rimuoviTask(index) {
+      this.tasks.splice(index, 1);
+    },
+    is_done(i) {
+      this.tasks[i].done = !this.tasks[i].done;
+    },
   },
 }).mount('#app');
